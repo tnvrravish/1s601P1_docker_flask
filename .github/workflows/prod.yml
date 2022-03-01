@@ -55,6 +55,6 @@ jobs:
       - uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
         with:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-          heroku_app_name: "vt7-test-01" #Must be unique in Heroku
+          heroku_app_name: "vishnu-flask-prod" #Must be unique in Heroku
           heroku_email: "tnvrra393@gmail.com"
           usedocker: true
