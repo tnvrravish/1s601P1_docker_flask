@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% block content %}
+     <h3>Docker</h3>
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-12">
+                <p>Docker is a containerization platform that is free and open source. It allows developers to package programs into containers, which are standardized executable components that combine application source code with the OS libraries and dependencies needed to run that code in any environment.
+                </p>
+                <p>
+                    Docker technology conists of several terms like Containers, Docker images, Docker Hub etc.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-8">
+                <div class="row">
+                    <div class="col-4">
+                        <img src="https://logos-world.net/wp-content/uploads/2021/02/Docker-Symbol.png" style="height: 50% !important; width: 100%"/>
+                    </div>
+                    <div class="col-8">
+                       <p>
+                           A container is a standard software unit that encapsulates code and all of its dependencies so that the program can be moved from one computing environment to another fast and reliably. A Docker container image is a small, standalone software package that contains everything needed to run a program, including code, runtime, system tools, system libraries, and settings.
+                       </p>
+                        <p>
+                            Docker Hub is the world's largest. library and community for container images. It can be used to store several docker images and even access prebuilt images. Helps us share our work with others. Images can be stored on repositories which are similar to real life folders on Docker Hub.
+                            We have used the following repository for this project : <a href="https://hub.docker.com/repository/docker/tnvrravish/project_1">Docker Hub Repository</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="row p-3">
+                    <div class="col-4">
+                        <img src="https://www.docker.com/sites/default/files/d8/styles/large/public/2018-11/container-what-is-container.png?itok=vle7kjDj" style="height: 50% !important; width: 100%"/>
+                    </div>
+                    <div class="col-8">
+                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                    </div>
+                </div>
+            </div>
+            <div class="col-4" id="sidebar">
+                <h5> More Reading Material</h5>
+                <ol>
+                    <li> Python Flask</li>
+                    <li> CI/CD</li>
+                    <li> Git</li>
+                    <li> GitHub</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+{% endblock %}

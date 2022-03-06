@@ -1,38 +1,101 @@
 {% extends "base.html" %}
 {% block content %}
     <h3> Index Page </h3>
- <div class="container my-5">
+    <div class="container my-5">
         <div class="row">
             <div class="col-12">
-                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                <h4>Hello Everyone! </h4> <br>
+                I am Vishnu Sai Thota a graduate student currently pursuing Masters in Data Science at NJIT.
+                Let me guide you through some of the major technologies used in web development.
+
             </div>
         </div>
+    </div>
+    <div id="carouselExampleSlidesOnly" class="carousel slide mb-5" data-bs-ride="carousel" data-bs-intervel="2000">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner" style="height:50%">
+            <div class="carousel-item active">
+                <a href="/docker">
+                <img src="https://logos-world.net/wp-content/uploads/2021/02/Docker-Symbol.png"
+                     class="d-block w-100 " alt="..." >
+                </a>
+            </div>
+            <div class="carousel-item">
+                <a href="/flask">
+                <img src="https://miro.medium.com/max/640/1*XzIRJGujfqAiOV2EIQgR_Q.png" class="d-block w-100  img-fluid"
+                     alt="...">
+                </a>
+            </div>
+
+            <div class="carousel-item">
+                <a href="/git">
+                <img src="https://miro.medium.com/max/1400/1*mtsk3fQ_BRemFidhkel3dA.png" class="d-block w-100 img-fluid"
+                     alt="...">
+                </a>
+            </div>
+            <div class="carousel-item">
+                <a href="/cicd">
+                <img src="https://miro.medium.com/max/850/0*OKF6DYlU2GPisuSJ.jpg" class="d-block w-100  img-fluid"
+                     alt="...">
+                </a>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleSlidesOnly"
+                data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleSlidesOnly"
+                data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
 
     <div class="container">
-        <div class="row">
-            <div class="col-8">
-                <div class="row">
-                    <div class="col-4">
-                        <img src="https://www.industrialempathy.com/img/remote/ZiClJf-1920w.jpg" style="height: 50% !important; width: 100%"/>
-                    </div>
-                    <div class="col-8">
-                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-                    </div>
+          <div class="row d-flex justify-content-center" >
+            <div class="card" style="width: 16rem;">
+                <img src="https://logos-world.net/wp-content/uploads/2021/02/Docker-Symbol.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Docker</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="/docker" class="btn btn-primary">Read More</a>
                 </div>
-                <div class="row">
-                    <div class="col-4">
-                        <img src="https://www.industrialempathy.com/img/remote/ZiClJf-1920w.jpg" style="height: 50% !important; width: 100%"/>
-                    </div>
-                    <div class="col-8">
-                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-                    </div>
+              </div>
+              <div class="card" style="width: 16rem;">
+                <img src="https://miro.medium.com/max/640/1*XzIRJGujfqAiOV2EIQgR_Q.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Python-Flask</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="/flask" class="btn btn-primary">Read More</a>
                 </div>
-            </div>
-            <div class="col-4">
-                <img src="https://www.industrialempathy.com/img/remote/ZiClJf-1920w.jpg" style="height: 50% !important; width: 100%;"/>
-                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
-            </div>
-        </div>
-    </div>
+              </div>
+              <div class="card" style="width: 16rem;">
+                <img src="https://miro.medium.com/max/1400/1*mtsk3fQ_BRemFidhkel3dA.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                  <h5 class="card-title">Git/GitHub</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="/git" class="btn btn-primary">Read More</a>
+                </div>
+              </div>
+              <div class="card" style="width: 16rem;">
+                <img src="https://miro.medium.com/max/850/0*OKF6DYlU2GPisuSJ.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">CI/CD</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="/cicd" class="btn btn-primary">Read More</a>
+                </div>
+              </div>
+          </div>
+      </div>
+
 {% endblock %}
