@@ -31,22 +31,53 @@
                     </div>
                 </div>
                 <div class="row p-3">
+                    <div class="col-8">
+                        <p> There are several commands in Docker and some of them are :-</p>
+                        <ul>
+                            <li> <b>docker build </b> : This command is used to build a docker image. </li>
+                            <li> <b>docker run </b>: This command is used to run the built image to create a container. there are several flags that can be used along with this command like <b> -p</b> which can take values like port numbers through which we can interact with our application. </li>
+                            <li> <b>docker ps </b>: Used to get the list of all containers running and their status.</li>
+                            <li> <b>docker stop "the-container-id" </b>: used to stop running of a specific container.</li>
+                            <li> <b>docker rm "the-container-id" </b>: used to remove the container from the logs</li>
+                            <li> <b>docker push user_name/repository name </b>: used to push the image to dockerhub repository.</li>
+                            <li> <b>docker network create </b>: used to create a network in which multiple containers interact. </li>
+                            <li> <b>docker compose file </b>: This file can be used as a blueprint for the execution of docker images and containers. Instead of runnning several dependencies one after other
+                            all dependencies can be put into compose file and with one command the desired working environment can be created.</li>
+                            <li> <b>docker compose up </b>: This command is used to start up the compose file.</li>
+                            <li> <b>docker compose down </b>: This command is used to terminate the compose file.</li>
+                        </ul>
+                    </div>
                     <div class="col-4">
                         <img src="https://www.docker.com/sites/default/files/d8/styles/large/public/2018-11/container-what-is-container.png?itok=vle7kjDj" style="height: 50% !important; width: 100%"/>
                     </div>
-                    <div class="col-8">
-                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+
+                </div>
+                <div class="row p-3">
+                    <div class="row">
+                        <p>
+                            Steps to run the project :
+                            <ol>
+                        <li>
+                            open cmd on your system.
+                        </li>
+                        <li> cd into the directory where the project is. </li>
+                        <li> use <b> docker compose up --build -d</b> command to run the image and create a container the -d flag allows us to run the container in detached mode</li>
+
+                        <li> now to access the terminal within the container use <b> docker exec "container_id" /bin/bash</b> command the allows us to use terminal in the container. </li>
+
+                    </ol>
+                        </p>
                     </div>
                 </div>
             </div>
             <div class="col-4" id="sidebar">
                 <h5> More Reading Material</h5>
-                <ol>
-                    <li> Python Flask</li>
-                    <li> CI/CD</li>
-                    <li> Git</li>
-                    <li> GitHub</li>
-                </ol>
+                <ul>
+                    <li> <a href="/flask">Flask</a>  </li>
+                    <li> <a href="/git">Git/GitHub</a> </li>
+                    <li> <a href="/cicd">CI/CD</a>  </li>
+                </ul>
+                 <img src="https://logos-world.net/wp-content/uploads/2021/02/Docker-Symbol.png" style="height: 25% !important; width: 100%"/>
             </div>
         </div>
     </div>
