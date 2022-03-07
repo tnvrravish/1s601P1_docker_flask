@@ -4,9 +4,12 @@
     <div class="container my-5">
         <div class="row">
             <div class="col-12">
-                <p>Git is a distributed version control system that allows multiple people to work on the same project at the same time while also saving a history of all changes made. This will help to prevent code conflicts and give developers the opportunity to roll back files or entire projects to a previous version of their code.
-                </p><p>Git can keep track of what modifications were made, who made them, when they were made, and why they were changed.</p>
-                <p> GitHub is a version control and collaboration platform for code. It allows you and others to collaborate on projects from any location.</p>
+                <p>
+                    PyTest is a testing framework that lets users build test scripts in Python. It aids in the creation of simple and scalable API test scenarios.
+                    Several tests have been written in this project to test several instances of code and webpages. In this project within the tests folder,
+                    different python files are present to test different instances of the project. In simple_pages_test file I have written tests to check if the correct webpages are loading for certain responses and if 404 error status code is displayed for
+                    page not found.
+                </p>
 
             </div>
         </div>
@@ -17,54 +20,56 @@
             <div class="col-8">
                 <div class="row">
                     <div class="col-4">
-                        <img src="https://e7.pngegg.com/pngimages/713/558/png-clipart-computer-icons-pro-git-github-logo-text-logo-thumbnail.png" style="height: 50% !important; width: 100%"/>
-                    </div>
+                        <img src="https://miro.medium.com/max/640/1*XzIRJGujfqAiOV2EIQgR_Q.png" style="height: 50% !important; width: 100%"/>
+
+
+                             </div>
                     <div class="col-8">
-                        <h6>Branches</h6>
-                        <p> Branching is  a revolutionary feature in Version Control System. This allows us to diverge from the main line of development and continue to do work without messing with that main line. We can use <b>git branch "Branch_name"</b> option to create new branch which will have a copy of all the work until then on main line and from there we can continue with our work and do changes which will not affect the main branch code. <b> git checkout</b> command is used switch from one branch to other. </p>
-                           </div>
+                       <p> There are several commands in Docker and some of them are :-</p>
+                        <ul>
+                            <li><b>docker_flask</b> <- root of the folder</li>
+                            <ul>
+                                <li><b>docker-compose.yml</b> : Docker orchestration file contains step by step process to run the container.</li>
+                                <li><b>Dockerfile</b> : Used to build a Docker Image.</li>
+                            </ul>
+                            <li><b>workflows</b> <- contains workflows blueprints</li>
+                            <ul>
+                                  <li><b>dev.yml</b> : contains development workflow and is activated when an branch is merged into the main branch.</li>
+                                  <li><b>prod.yml</b> : contains production workflow and is activated when data is pushed from local to github repository. </li>
+                            </ul>
+
+                        </ul>
+                    </div>
                 </div>
+
                 <div class="row">
-                    <div class="col-4">
-                        <img src="https://foundations.projectpythia.org/_images/GitHub-logo.png" style="height: 25% !important; width: 100%"/>
-                    </div>
-                    <div class="col-8">
-                        <h6>Merge</h6>
-                        <p>Git's approach of bringing a forked history back together is called merging. The<b>git merge</b> command allows you to combine the several development lines established by git branch into a single branch.
-                            To merge into the main branch we will have to commit our changes in the branch and the use the merge command. There can be few outcomes after this command,
-                            we can have successful merging and the new features from the branch are now available in the main branch to which the branch is merged.
-                            Or we can have something called as merge conflicts i.e. when there is inconsitency of data between two branches we get merege conflicts. These needs to be handeled
-                            and we can do that by overlooking what changes to be reflected and what not.
-
-                        </p>
-                         </div>
-
-                </div>
-                <div class="row p-3">
                     <div class="row">
-                        <h6>Commit</h6>
-                        <p>The git commit command takes a snapshot of the current state of the project's changes. Committed snapshots are "secure" versions of a project that Git will never modify unless you expressly tell it to. The git add command is used to promote or'stage' changes to the project that will be saved in a commit before running git commit. Git commit and git add are two of the most frequently used commands.
+                        <ul>
+                        <li><b>app</b> folder <- contain webpages,controllers for servers, css, javascript files etc.</li>
+                            <ul>
+                                <li><b>simple_pages</b><- contains controller for webpages  of our for project.</li>
+                                <ul>
+                                    <li><b>templates</b><- contains all the webpages in our project, like index,flask,docker pages.</li>
+                                    <li><b>_init_.py</b> : contains python function to render content from simple webpages combined with base html</li>
+                                </ul>
+                                <li><b>static</b> <- This folder contains all the static content for project like CSS, JavaScript and images.</li>
+                                <li><b>templates</b><- contains template files like base.html that is common for most of the webpages.</li>
+                                <li><b>run.py</b>: used to create server for the API.</li>
+                                <li><b>_init_.py</b> : contains initiation of Flask application.</li>
+                            </ul>
 
-                        </p>
-                        <h6>Tags</h6>
-                        <p>Git has the ability to mark critical points in the history of a repository. People usually use this feature to denote different versions of their code.</p>
-                        <h6>Repositories</h6>
-                        <p>In GIT, repositories are collections of files from various versions of a Project. These files are imported from the repository into the user's local server for additional updates and changes to the file's content. To create these versions and store them in a repository, a VCS (Version Control System) is utilized. Cloning is the process of copying content from an existing Git Repository with the aid of various Git Tools. The user receives the entire repository on his own PC after the cloning operation is completed.
-                        We can make several changes locally and then save it on the repositories using push command.
-                        </p>
-
+                        </ul>
                     </div>
                 </div>
             </div>
-
-            <div class="col-4">
-                <img src="https://miro.medium.com/max/1400/1*mtsk3fQ_BRemFidhkel3dA.png" style="height: 50% !important; width: 100%;"/>
-                 <h5> More Reading Material</h5>
+            <div class="col-4" id="sidebar">
+                <h5> More Reading Material</h5>
                 <ul>
-                    <li> <a href="/flask">Flask</a>  </li>
-                    <li> <a href="/docker">Docker</a> </li>
+                    <li> <a href="/docker">Docker</a>  </li>
+                    <li> <a href="/git">Git/GitHub</a> </li>
                     <li> <a href="/cicd">CI/CD</a>  </li>
                 </ul>
+                 <img src="https://miro.medium.com/max/800/1*Q5EUk28Xc3iCDoMSkrd1_w.png" style="height: 25% !important; width: 100%"/>
             </div>
         </div>
     </div>
