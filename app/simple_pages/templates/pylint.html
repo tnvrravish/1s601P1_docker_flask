@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+{% block content %}
+    <h3>Pylint</h3>
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-12">
+                <p>Pylint is a tool for checking Python code for errors, enforcing coding standards, and detecting code
+                    smells. It may also look for specific type errors, make suggestions for refactoring individual
+                    blocks, and provide information about the code's complexity.
+                </p>
+                <p>
+                    Pylint is a Python code error checker that also tries to enforce coding standards and detects code
+                    smells. It can also identify issues, make recommendations for how certain blocks might be rebuilt,
+                    and provide information about the code's complexity.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-8">
+                <div class="row">
+                    <div class="col-8">
+                        <h6>Enforce Coding Standards</h6>
+                        <p>
+                            Pylint checks if the user is following all PEP8 standards, wheather required modules are
+                            used and sufficient spacing and dockstrings are placed.
+                            This creates a sense of uniformity across code writtend all over the world following certain
+                            standards.
+                        </p>
+                        <h6> Ease of Use</h6>
+                        <p>
+                            It, like other tools, is prone to generating redundant code. The process of resetting an
+                            existing code without affecting its exterior behavior or performance is known as code reset.
+                            The software's design, structure, and usefulness are all improved by redesigning it.
+                        </p></div>
+                    <div class="col-4">
+                        <img src="https://elpythonista.com/wp-content/uploads/2021/02/PEP_8_Eng.jpg"
+                             style="height: 50% !important; width: 100%"/>
+                    </div>
+
+                </div>
+                <div class="row justify-content-center p-2">
+                    <img src="{{ url_for('static', filename="images/pylint1.PNG") }}"
+                         style="height: 25% !important; width: 75%"/>
+                    <p><b> This is the result of pylint and pytest of my project.</b></p>
+                </div>
+
+                <div class="row p-3">
+                    <div class="row">
+
+                        <h6> Should we always follow pylint ?</h6>
+                        <p>
+                            Pylint is not wiser than you, and what he says should not be taken as gospel. Pylint may
+                            warn you about things you have done conscientiously. Pylint makes every attempt to report as
+                            few false positives for faults as possible, although it may be overly careful with warnings.
+                            That's because it's trying to figure out what's detrimental in one context but not in
+                            another, or it's looking for stuff you don't care about. In general, Pylint will not remain
+                            completely silent about your code, so don't be surprised if your project generates a flurry
+                            of alerts.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="row">
+                    <h5> More Reading Material</h5>
+                    <ul>
+                        <li><a href="/flask">Flask</a></li>
+                        <li><a href="/docker">Docker</a></li>
+                        <li><a href="/git">Git/GitHub</a></li>
+                        <li><a href="/aaa">AAA Testing</a></li>
+                        <li><a href="/oop">OOP</a></li>
+                        <li><a href="/pylint">Pylint</a></li>
+                        <li><a href="/solid">SOLID</a></li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <img src="https://miro.medium.com/max/1200/1*gW_OyzV6SyFJ0v_ybcFLuQ.png"
+                         style="height: 50% !important; width: 100%"/>
+                </div>
+
+            </div>
+        </div>
+    </div>
+{% endblock %}

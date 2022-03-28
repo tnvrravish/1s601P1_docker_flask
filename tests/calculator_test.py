@@ -1,35 +1,55 @@
 """Testing the Calculator"""
+# From specifies the namespace
 from calculator import Calculator
 
 
-def test_calculator_is_instance():
-    """Testing the Calculator"""
-    calculator = Calculator()
-    assert isinstance(calculator, Calculator)
-
-
-def test_calculator_get_result_method():
-    """Testing the Calculator"""
-    calculator = Calculator()
-    assert calculator.get_result() == 0
-
-
-def test_calculator_result_property():
-    """Testing the Calculator"""
-    calc1 = Calculator()
-    calc2 = Calculator()
-    calc1.result = 5
-    calc2.result = 6
-    assert calc1.result == 5
-    assert calc2.result == 6
+def generate_tuple():
+    """ generates tuple"""
+    # This is Arrange part in AAA
+    return 1, 2
 
 
 def test_calculator_add_method():
     """Testing the Calculator"""
-    calculator = Calculator()
-    assert calculator.add(1) == 1
+    # this is show using the calculator object add method
+    # This is Arrange part in AAA
+    tuple_list = generate_tuple()
+    # This is Action Part of AAA
+    result = Calculator.add(tuple_list)
+    # This is Assert part in AAA
+    assert result == 3
+
 
 def test_calculator_subtract_method():
     """Testing the Calculator Subtract"""
-    calculator = Calculator()
-    assert calculator.subtract(1) == -1
+    tuple_list = generate_tuple()
+    result = Calculator.subtract(tuple_list)
+    assert result == -3
+
+
+def test_calculator_multiply_method():
+    """Testing the Calculator Multiply"""
+    tuple_list = generate_tuple()
+    result = Calculator.multiply(tuple_list)
+    assert result == 2
+
+
+def test_calculater_division_method():
+    """Testing the Calculator Division"""
+    tuple_list = generate_tuple()
+    result = Calculator.division(tuple_list)
+    assert result == 0.5
+
+
+def test_calculater_divison_by_zero_method():
+    """Testing the Calculator Division by Zero"""
+    tuple_list = (1, 0)
+    result = Calculator.division(tuple_list)
+    assert result is None
+
+
+def test_calculater_divison_by_multiplevalues_method():
+    """Testing the Calculator Division by Zero"""
+    tuple_list = (1, 2, 3)
+    result = Calculator.division(tuple_list)
+    assert result is None

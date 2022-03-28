@@ -1,0 +1,118 @@
+{% extends "base.html" %}
+{% block content %}
+    <h3>AAA Testing</h3>
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-12">
+                <p>
+                    A test is a technique that involves putting a behavior through its paces to see if it works
+                    properly. There are numerous types of functional tests, such as unit tests, integration tests, and
+                    end-to-end tests, but they all do the same thing: they try something and report PASS or FAIL.
+
+                    Testing serves as a form of empirical feedback in the development process. Testing keeps us secure
+                    in this way. We can tell when things go wrong thanks to tests. Coding can be dangerous without
+                    tests. As an example, we can wind up with problems in our code.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-8">
+                <div class="row">
+                    <div class="col-8">
+                        <h6>The Pattern</h6>
+                        <p>
+                        <ul>
+                            <li>
+                                <b>Arrange:</b> : Assemble the inputs and outputs. The test case should be set up using
+                                the arrange steps. Is there anything specific that the test requires, such as objects or
+                                special settings? Is it necessary to prepare a database? Is it necessary to log into an
+                                online application? At the commencement of the test, take care of all of these
+                                operations.
+                            </li>
+                            <li>
+                                <b> Action</b> : Act on the target behavior. Act steps should cover the main thing to be
+                                tested. This could be calling a function or method, calling a REST API, or interacting
+                                with a web page. Keep actions focused on the target behavior.
+                            </li>
+                            <li>
+                                <b> Assert</b> : Make a case for the projected outcomes. Steps in the act should evoke
+                                some form of reaction. Assert steps confirm if a response is good or not. Assertions can
+                                sometimes be as straightforward as testing numeric or textual values. Other times, they
+                                may necessitate a thorough examination of numerous aspects of a system. Finally,
+                                assertions will determine whether the test passes or fails.
+                            </li>
+                        </ul>
+                        </p>
+                    </div>
+                    <div class="col-4">
+                        <img src="https://miro.medium.com/max/1200/1*_MiurxVJ3baRaV6s7r4vwA.png"
+                             style="height: 50% !important; width: 100%"/>
+                    </div>
+
+                </div>
+                <div class="row justify-content-center p-2">
+                    <img src="{{ url_for('static', filename="images/AAA.PNG") }}"
+                         style="height: 25% !important; width: 75%"/>
+                </div>
+
+                <div class="row p-3">
+                    <div class="row">
+
+                        <h6> AAA Testing in Calculator </h6>
+                        <p>
+                            The Above image is a test function which tests functionality of Addition operation in the
+                            Calculator.
+                            Here follow the sequential pattern for AAA testing :
+                        <ol>
+                            <li>
+                                <b>Arrange</b> :We see that the generate_tupple() function implements the arrange
+                                section of the test by generating a tuple needed to used in Arrange and Assert.
+                                We see that tuple_list = generate_tupple() is also part of Arrange.
+                            </li>
+                            <li>
+                                <b>Action</b> :In the next section on Action this is where we perform actions/operation
+                                on data arranged in the previous section, linke in this case we call our addition method
+                                from calculation class which persforms the addition function and returns the Sum which
+                                is then stored in the result varaiable.
+                            </li>
+                            <li>
+                                <b>Assert</b> :Now the final step of AAA is to assert if the value obtained as the
+                                result of action is matching the required result.
+                                If the condition is satisfied the test is passed successfully.
+                            </li>
+                        </ol>
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="row">
+                    <h5> More Reading Material</h5>
+                    <ul>
+                        <li><a href="/flask">Flask</a></li>
+                        <li><a href="/docker">Docker</a></li>
+                        <li><a href="/git">Git/GitHub</a></li>
+                        <li><a href="/aaa">AAA Testing</a></li>
+                        <li><a href="/oop">OOP</a></li>
+                        <li><a href="/pylint">Pylint</a></li>
+                        <li><a href="/solid">SOLID</a></li>
+                    </ul>
+                </div>
+                <div class="row p-3">
+                    <img src="{{ url_for('static', filename="images/aaa1.PNG") }}"
+                         style="height: 70% !important; width: 100%"/>
+                </div>
+                <div class="row p-3">
+                    <img src="{{ url_for('static', filename="images/aaa2.PNG") }}"
+                         style="height: 70% !important; width: 100%"/>
+                </div>
+
+            </div>
+        </div>
+    </div>
+{% endblock %}

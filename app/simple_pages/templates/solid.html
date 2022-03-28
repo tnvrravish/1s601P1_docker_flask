@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+{% block content %}
+    <h3>SOLID Principles</h3>
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-12">
+                <p>
+                    SOLID is an acronym for the first five object-oriented design (OOD) principles.
+                    These principles outline best practices for designing software while keeping in mind the project's
+                    long-term maintenance and expansion. Adopting these techniques can also help you avoid code smells,
+                    restructure your code, and design Agile or adaptive software.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-8">
+                <div class="row">
+                    <div class="col-4">
+                        <img src="https://miro.medium.com/max/1200/1*OzwARbvHUg1RlZ7LYyLCrg.png"
+                             style="height: 50% !important; width: 100%"/>
+                    </div>
+                    <div class="col-8">
+                        <h6>Solid Stands for :</h6>
+                        <ul>
+                            <li> S - Single-responsiblity Principle</li>
+                            <li> O - Open-closed Principle</li>
+                            <li> L - Liskov Substitution Principle</li>
+                            <li>I - Interface Segregation Principle</li>
+                            <li>D - Dependency Inversion Principle</li>
+                        </ul>
+
+                        <h6> Single-responsiblity Principle </h6>
+                        <p>
+                            According to the Single-Responsibility Principle (SRP),a class should have only one reason
+                            to change, which means it should only have one job.
+                        </p>
+
+                    </div>
+
+
+                </div>
+                <div class="row justify-content-center p-2" id="imggg">
+                    <img src="https://www.technologylogs.com/wp-content/uploads/2020/12/Solid_principle.jpg"
+                         style="height: 100% !important; width: 75%"/>
+                </div>
+
+                <div class="row p-3">
+                    <div class="row">
+                        <h6> Open-closed Principle </h6>
+                        <p>
+                            The Open-Closed Principle (OCP) asserts that things or entities should be extensible but not
+                            modifiable. This means that a class should be able to be extended without requiring changes
+                            to the class itself.
+                        </p>
+                        <h6> Liskov Substitution Principle </h6>
+                        <p>
+                            This means that every subclass or derived class should be substitutable for their base or
+                            parent class.
+                        </p>
+                        <h6> Interface Segregation Principle</h6>
+                        <p>
+                            Clients should never be compelled to implement an interface they don't use, nor should they
+                            be forced to rely on methods they don't utilize.
+                        </p>
+                        <h6> Dependency Inversion Principle </h6>
+                        <p>
+                            The idea of dependency inversion asserts that entities must rely on abstractions rather than
+                            concretions. It specifies that the high-level module should rely on abstractions rather than
+                            the low-level module.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="row">
+                    <h5> More Reading Material</h5>
+                    <ul>
+                        <li><a href="/flask">Flask</a></li>
+                        <li><a href="/docker">Docker</a></li>
+                        <li><a href="/git">Git/GitHub</a></li>
+                        <li><a href="/aaa">AAA Testing</a></li>
+                        <li><a href="/oop">OOP</a></li>
+                        <li><a href="/pylint">Pylint</a></li>
+                        <li><a href="/solid">SOLID</a></li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <img src="https://www.freecodecamp.org/news/content/images/2020/08/solid.png"
+                         style="height: 50% !important; width: 100%"/>
+                </div>
+
+            </div>
+        </div>
+    </div>
+{% endblock %}
