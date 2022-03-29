@@ -1,12 +1,52 @@
 {% extends "base.html" %}
+{% block nav %}
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" aria-current="page"
+               href="{{ url_for('simple_pages.show', page="index") }}">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link "
+               href="{{ url_for('simple_pages.show', page="docker") }}">Docker</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="{{ url_for('simple_pages.show', page="git") }}">Git</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('simple_pages.show', page="flask") }}">Flask</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('simple_pages.show', page="cicd") }}">CI/CD</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('simple_pages.show', page="pylint") }}">Pylint</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('simple_pages.show', page="aaa") }}">AAA</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('simple_pages.show', page="oop") }}">OOP</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('simple_pages.show', page="solid") }}">SOLID</a>
+        </li>
+
+    </ul>
+{% endblock %}
 {% block content %}
     <h3>Git/Github</h3>
     <div class="container my-5">
         <div class="row">
             <div class="col-12">
-                <p>Git is a distributed version control system that allows multiple people to work on the same project at the same time while also saving a history of all changes made. This will help to prevent code conflicts and give developers the opportunity to roll back files or entire projects to a previous version of their code.
-                </p><p>Git can keep track of what modifications were made, who made them, when they were made, and why they were changed.</p>
-                <p> GitHub is a version control and collaboration platform for code. It allows you and others to collaborate on projects from any location.</p>
+                <p>Git is a distributed version control system that allows multiple people to work on the same project
+                    at the same time while also saving a history of all changes made. This will help to prevent code
+                    conflicts and give developers the opportunity to roll back files or entire projects to a previous
+                    version of their code.
+                </p>
+                <p>Git can keep track of what modifications were made, who made them, when they were made, and why they
+                    were changed.</p>
+                <p> GitHub is a version control and collaboration platform for code. It allows you and others to
+                    collaborate on projects from any location.</p>
 
             </div>
         </div>
@@ -17,40 +57,62 @@
             <div class="col-8">
                 <div class="row">
                     <div class="col-4">
-                        <img src="https://e7.pngegg.com/pngimages/713/558/png-clipart-computer-icons-pro-git-github-logo-text-logo-thumbnail.png" style="height: 50% !important; width: 100%"/>
+                        <img src="https://e7.pngegg.com/pngimages/713/558/png-clipart-computer-icons-pro-git-github-logo-text-logo-thumbnail.png"
+                             style="height: 50% !important; width: 100%"/>
                     </div>
                     <div class="col-8">
                         <h6>Branches</h6>
-                        <p> Branching is  a revolutionary feature in Version Control System. This allows us to diverge from the main line of development and continue to do work without messing with that main line. We can use <b>git branch "Branch_name"</b> option to create new branch which will have a copy of all the work until then on main line and from there we can continue with our work and do changes which will not affect the main branch code. <b> git checkout</b> command is used switch from one branch to other. </p>
-                           </div>
+                        <p> Branching is a revolutionary feature in Version Control System. This allows us to diverge
+                            from the main line of development and continue to do work without messing with that main
+                            line. We can use <b>git branch "Branch_name"</b> option to create new branch which will have
+                            a copy of all the work until then on main line and from there we can continue with our work
+                            and do changes which will not affect the main branch code. <b> git checkout</b> command is
+                            used switch from one branch to other. </p>
+                    </div>
                 </div>
                 <div class="row">
                     <div class="col-4">
-                        <img src="https://foundations.projectpythia.org/_images/GitHub-logo.png" style="height: 25% !important; width: 100%"/>
+                        <img src="https://foundations.projectpythia.org/_images/GitHub-logo.png"
+                             style="height: 25% !important; width: 100%"/>
                     </div>
                     <div class="col-8">
                         <h6>Merge</h6>
-                        <p>Git's approach of bringing a forked history back together is called merging. The<b>git merge</b> command allows you to combine the several development lines established by git branch into a single branch.
-                            To merge into the main branch we will have to commit our changes in the branch and the use the merge command. There can be few outcomes after this command,
-                            we can have successful merging and the new features from the branch are now available in the main branch to which the branch is merged.
-                            Or we can have something called as merge conflicts i.e. when there is inconsitency of data between two branches we get merege conflicts. These needs to be handeled
+                        <p>Git's approach of bringing a forked history back together is called merging. The<b>git
+                            merge</b> command allows you to combine the several development lines established by git
+                            branch into a single branch.
+                            To merge into the main branch we will have to commit our changes in the branch and the use
+                            the merge command. There can be few outcomes after this command,
+                            we can have successful merging and the new features from the branch are now available in the
+                            main branch to which the branch is merged.
+                            Or we can have something called as merge conflicts i.e. when there is inconsitency of data
+                            between two branches we get merege conflicts. These needs to be handeled
                             and we can do that by overlooking what changes to be reflected and what not.
 
                         </p>
-                         </div>
+                    </div>
 
                 </div>
                 <div class="row p-3">
                     <div class="row">
                         <h6>Commit</h6>
-                        <p>The git commit command takes a snapshot of the current state of the project's changes. Committed snapshots are "secure" versions of a project that Git will never modify unless you expressly tell it to. The git add command is used to promote or'stage' changes to the project that will be saved in a commit before running git commit. Git commit and git add are two of the most frequently used commands.
+                        <p>The git commit command takes a snapshot of the current state of the project's changes.
+                            Committed snapshots are "secure" versions of a project that Git will never modify unless you
+                            expressly tell it to. The git add command is used to promote or'stage' changes to the
+                            project that will be saved in a commit before running git commit. Git commit and git add are
+                            two of the most frequently used commands.
 
                         </p>
                         <h6>Tags</h6>
-                        <p>Git has the ability to mark critical points in the history of a repository. People usually use this feature to denote different versions of their code.</p>
+                        <p>Git has the ability to mark critical points in the history of a repository. People usually
+                            use this feature to denote different versions of their code.</p>
                         <h6>Repositories</h6>
-                        <p>In GIT, repositories are collections of files from various versions of a Project. These files are imported from the repository into the user's local server for additional updates and changes to the file's content. To create these versions and store them in a repository, a VCS (Version Control System) is utilized. Cloning is the process of copying content from an existing Git Repository with the aid of various Git Tools. The user receives the entire repository on his own PC after the cloning operation is completed.
-                        We can make several changes locally and then save it on the repositories using push command.
+                        <p>In GIT, repositories are collections of files from various versions of a Project. These files
+                            are imported from the repository into the user's local server for additional updates and
+                            changes to the file's content. To create these versions and store them in a repository, a
+                            VCS (Version Control System) is utilized. Cloning is the process of copying content from an
+                            existing Git Repository with the aid of various Git Tools. The user receives the entire
+                            repository on his own PC after the cloning operation is completed.
+                            We can make several changes locally and then save it on the repositories using push command.
                         </p>
 
                     </div>
@@ -58,12 +120,13 @@
             </div>
 
             <div class="col-4">
-                <img src="https://miro.medium.com/max/1400/1*mtsk3fQ_BRemFidhkel3dA.png" style="height: 50% !important; width: 100%;"/>
-                 <h5> More Reading Material</h5>
+                <img src="https://miro.medium.com/max/1400/1*mtsk3fQ_BRemFidhkel3dA.png"
+                     style="height: 50% !important; width: 100%;"/>
+                <h5> More Reading Material</h5>
                 <ul>
-                    <li> <a href="/flask">Flask</a>  </li>
-                    <li> <a href="/docker">Docker</a> </li>
-                    <li> <a href="/cicd">CI/CD</a>  </li>
+                    <li><a href="/flask">Flask</a></li>
+                    <li><a href="/docker">Docker</a></li>
+                    <li><a href="/cicd">CI/CD</a></li>
                     <li><a href="/aaa">AAA Testing</a></li>
                     <li><a href="/oop">OOP</a></li>
                     <li><a href="/pylint">Pylint</a></li>

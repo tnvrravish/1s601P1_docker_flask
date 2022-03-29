@@ -1,10 +1,46 @@
 {% extends "base.html" %}
+{% block nav %}
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" aria-current="page"
+               href="{{ url_for('simple_pages.show', page="index") }}">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active"
+               href="{{ url_for('simple_pages.show', page="docker") }}">Docker</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('simple_pages.show', page="git") }}">Git</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('simple_pages.show', page="flask") }}">Flask</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('simple_pages.show', page="cicd") }}">CI/CD</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('simple_pages.show', page="pylint") }}">Pylint</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('simple_pages.show', page="aaa") }}">AAA</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('simple_pages.show', page="oop") }}">OOP</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('simple_pages.show', page="solid") }}">SOLID</a>
+        </li>
+
+    </ul>
+{% endblock %}
 {% block content %}
-     <h3>Docker</h3>
+    <h3>Docker</h3>
     <div class="container my-5">
         <div class="row">
             <div class="col-12">
-                <p>Docker is a containerization platform that is free and open source. It allows developers to package programs into containers, which are standardized executable components that combine application source code with the OS libraries and dependencies needed to run that code in any environment.
+                <p>Docker is a containerization platform that is free and open source. It allows developers to package
+                    programs into containers, which are standardized executable components that combine application
+                    source code with the OS libraries and dependencies needed to run that code in any environment.
                 </p>
                 <p>
                     Docker technology conists of several terms like Containers, Docker images, Docker Hub etc.
@@ -18,15 +54,25 @@
             <div class="col-8">
                 <div class="row">
                     <div class="col-4">
-                        <img src="https://logos-world.net/wp-content/uploads/2021/02/Docker-Symbol.png" style="height: 50% !important; width: 100%"/>
+                        <img src="https://logos-world.net/wp-content/uploads/2021/02/Docker-Symbol.png"
+                             style="height: 50% !important; width: 100%"/>
                     </div>
                     <div class="col-8">
-                       <p>
-                           A container is a standard software unit that encapsulates code and all of its dependencies so that the program can be moved from one computing environment to another fast and reliably. A Docker container image is a small, standalone software package that contains everything needed to run a program, including code, runtime, system tools, system libraries, and settings.
-                       </p>
                         <p>
-                            Docker Hub is the world's largest. library and community for container images. It can be used to store several docker images and even access prebuilt images. Helps us share our work with others. Images can be stored on repositories which are similar to real life folders on Docker Hub.
-                            We have used the following repository for this project : <a href="https://hub.docker.com/repository/docker/tnvrravish/project_1">Docker Hub Repository</a>
+                            A container is a standard software unit that encapsulates code and all of its dependencies
+                            so that the program can be moved from one computing environment to another fast and
+                            reliably. A Docker container image is a small, standalone software package that contains
+                            everything needed to run a program, including code, runtime, system tools, system libraries,
+                            and settings.
+                        </p>
+                        <p>
+                            Docker Hub is the world's largest. library and community for container images. It can be
+                            used to store several docker images and even access prebuilt images. Helps us share our work
+                            with others. Images can be stored on repositories which are similar to real life folders on
+                            Docker Hub.
+                            We have used the following repository for this project : <a
+                                href="https://hub.docker.com/repository/docker/tnvrravish/project_1">Docker Hub
+                            Repository</a>
                         </p>
                     </div>
                 </div>
@@ -34,21 +80,33 @@
                     <div class="col-8">
                         <p> There are several commands in Docker and some of them are :-</p>
                         <ul>
-                            <li> <b>docker build </b> : This command is used to build a docker image. </li>
-                            <li> <b>docker run </b>: This command is used to run the built image to create a container. there are several flags that can be used along with this command like <b> -p</b> which can take values like port numbers through which we can interact with our application. </li>
-                            <li> <b>docker ps </b>: Used to get the list of all containers running and their status.</li>
-                            <li> <b>docker stop "the-container-id" </b>: used to stop running of a specific container.</li>
-                            <li> <b>docker rm "the-container-id" </b>: used to remove the container from the logs</li>
-                            <li> <b>docker push user_name/repository name </b>: used to push the image to dockerhub repository.</li>
-                            <li> <b>docker network create </b>: used to create a network in which multiple containers interact. </li>
-                            <li> <b>docker compose file </b>: This file can be used as a blueprint for the execution of docker images and containers. Instead of runnning several dependencies one after other
-                            all dependencies can be put into compose file and with one command the desired working environment can be created.</li>
-                            <li> <b>docker compose up </b>: This command is used to start up the compose file.</li>
-                            <li> <b>docker compose down </b>: This command is used to terminate the compose file.</li>
+                            <li><b>docker build </b> : This command is used to build a docker image.</li>
+                            <li><b>docker run </b>: This command is used to run the built image to create a container.
+                                there are several flags that can be used along with this command like <b> -p</b> which
+                                can take values like port numbers through which we can interact with our application.
+                            </li>
+                            <li><b>docker ps </b>: Used to get the list of all containers running and their status.</li>
+                            <li><b>docker stop "the-container-id" </b>: used to stop running of a specific container.
+                            </li>
+                            <li><b>docker rm "the-container-id" </b>: used to remove the container from the logs</li>
+                            <li><b>docker push user_name/repository name </b>: used to push the image to dockerhub
+                                repository.
+                            </li>
+                            <li><b>docker network create </b>: used to create a network in which multiple containers
+                                interact.
+                            </li>
+                            <li><b>docker compose file </b>: This file can be used as a blueprint for the execution of
+                                docker images and containers. Instead of runnning several dependencies one after other
+                                all dependencies can be put into compose file and with one command the desired working
+                                environment can be created.
+                            </li>
+                            <li><b>docker compose up </b>: This command is used to start up the compose file.</li>
+                            <li><b>docker compose down </b>: This command is used to terminate the compose file.</li>
                         </ul>
                     </div>
                     <div class="col-4">
-                        <img src="https://miro.medium.com/proxy/1*9hGvYE5jegHm1r_97gH-jQ.png" style="height: 25% !important; width: 100%"/>
+                        <img src="https://miro.medium.com/proxy/1*9hGvYE5jegHm1r_97gH-jQ.png"
+                             style="height: 25% !important; width: 100%"/>
                     </div>
 
                 </div>
@@ -56,16 +114,20 @@
                     <div class="row">
                         <p>
                             Steps to run the project :
-                            <ol>
-                        <li>
-                            open cmd on your system.
-                        </li>
-                        <li> cd into the directory where the project is. </li>
-                        <li> use <b> docker compose up --build -d</b> command to run the image and create a container the -d flag allows us to run the container in detached mode</li>
+                        <ol>
+                            <li>
+                                open cmd on your system.
+                            </li>
+                            <li> cd into the directory where the project is.</li>
+                            <li> use <b> docker compose up --build -d</b> command to run the image and create a
+                                container the -d flag allows us to run the container in detached mode
+                            </li>
 
-                        <li> now to access the terminal within the container use <b> docker exec "container_id" /bin/bash</b> command the allows us to use terminal in the container. </li>
+                            <li> now to access the terminal within the container use <b> docker exec "container_id"
+                                /bin/bash</b> command the allows us to use terminal in the container.
+                            </li>
 
-                    </ol>
+                        </ol>
                         </p>
                     </div>
                 </div>
@@ -73,15 +135,16 @@
             <div class="col-4" id="sidebar">
                 <h5> More Reading Material</h5>
                 <ul>
-                    <li> <a href="/flask">Flask</a>  </li>
-                    <li> <a href="/git">Git/GitHub</a> </li>
-                    <li> <a href="/cicd">CI/CD</a>  </li>
+                    <li><a href="/flask">Flask</a></li>
+                    <li><a href="/git">Git/GitHub</a></li>
+                    <li><a href="/cicd">CI/CD</a></li>
                     <li><a href="/aaa">AAA Testing</a></li>
                     <li><a href="/oop">OOP</a></li>
                     <li><a href="/pylint">Pylint</a></li>
                     <li><a href="/solid">SOLID</a></li>
                 </ul>
-                 <img src="https://images.contentstack.io/v3/assets/blt300387d93dabf50e/bltb6200bc085503718/5e1f209a63d1b6503160c6d5/containers-vs-virtual-machines.jpg" style="height: 25% !important; width: 100%"/>
+                <img src="https://images.contentstack.io/v3/assets/blt300387d93dabf50e/bltb6200bc085503718/5e1f209a63d1b6503160c6d5/containers-vs-virtual-machines.jpg"
+                     style="height: 25% !important; width: 100%"/>
             </div>
         </div>
     </div>
