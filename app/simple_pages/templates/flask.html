@@ -1,16 +1,56 @@
 {% extends "base.html" %}
+{% block nav %}
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" aria-current="page"
+               href="{{ url_for('simple_pages.show', page="index") }}">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link "
+               href="{{ url_for('simple_pages.show', page="docker") }}">Docker</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('simple_pages.show', page="git") }}">Git</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="{{ url_for('simple_pages.show', page="flask") }}">Flask</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('simple_pages.show', page="cicd") }}">CI/CD</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('simple_pages.show', page="pylint") }}">Pylint</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('simple_pages.show', page="aaa") }}">AAA</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('simple_pages.show', page="oop") }}">OOP</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('simple_pages.show', page="solid") }}">SOLID</a>
+        </li>
+
+    </ul>
+{% endblock %}
 {% block content %}
-     <h3>Python-Flask</h3>
+    <h3>Python-Flask</h3>
     <div class="container my-5">
         <div class="row">
             <div class="col-12">
                 <p>
-                    Flask is a web framework and a Python module that makes it simple to create web applications. It has a simple and extensible core: it's a microframework without an ORM (Object Relational Manager) or other things like that.
+                    Flask is a web framework and a Python module that makes it simple to create web applications. It has
+                    a simple and extensible core: it's a microframework without an ORM (Object Relational Manager) or
+                    other things like that.
                 </p>
                 <p>
-                    PyTest is a testing framework that lets users build test scripts in Python. It aids in the creation of simple and scalable API test scenarios.
-                    Several tests have been written in this project to test several instances of code and webpages. In this project within the tests folder,
-                    different python files are present to test different instances of the project. In simple_pages_test file I have written tests to check if the correct webpages are loading for certain responses and if 404 error status code is displayed for
+                    PyTest is a testing framework that lets users build test scripts in Python. It aids in the creation
+                    of simple and scalable API test scenarios.
+                    Several tests have been written in this project to test several instances of code and webpages. In
+                    this project within the tests folder,
+                    different python files are present to test different instances of the project. In simple_pages_test
+                    file I have written tests to check if the correct webpages are loading for certain responses and if
+                    404 error status code is displayed for
                     page not found.
                 </p>
 
@@ -23,22 +63,29 @@
             <div class="col-8">
                 <div class="row">
                     <div class="col-4">
-                        <img src="https://miro.medium.com/max/640/1*XzIRJGujfqAiOV2EIQgR_Q.png" style="height: 50% !important; width: 100%"/>
+                        <img src="https://miro.medium.com/max/640/1*XzIRJGujfqAiOV2EIQgR_Q.png"
+                             style="height: 50% !important; width: 100%"/>
 
 
-                             </div>
+                    </div>
                     <div class="col-8">
-                       <p> There are several commands in Docker and some of them are :-</p>
+                        <p> There are several commands in Docker and some of them are :-</p>
                         <ul>
                             <li><b>docker_flask</b> <- root of the folder</li>
                             <ul>
-                                <li><b>docker-compose.yml</b> : Docker orchestration file contains step by step process to run the container.</li>
+                                <li><b>docker-compose.yml</b> : Docker orchestration file contains step by step process
+                                    to run the container.
+                                </li>
                                 <li><b>Dockerfile</b> : Used to build a Docker Image.</li>
                             </ul>
                             <li><b>workflows</b> <- contains workflows blueprints</li>
                             <ul>
-                                  <li><b>dev.yml</b> : contains development workflow and is activated when an branch is merged into the main branch.</li>
-                                  <li><b>prod.yml</b> : contains production workflow and is activated when data is pushed from local to github repository. </li>
+                                <li><b>dev.yml</b> : contains development workflow and is activated when an branch is
+                                    merged into the main branch.
+                                </li>
+                                <li><b>prod.yml</b> : contains production workflow and is activated when data is pushed
+                                    from local to github repository.
+                                </li>
                             </ul>
 
                         </ul>
@@ -48,15 +95,25 @@
                 <div class="row">
                     <div class="row">
                         <ul>
-                        <li><b>app</b> folder <- contain webpages,controllers for servers, css, javascript files etc.</li>
+                            <li><b>app</b> folder <- contain webpages,controllers for servers, css, javascript files
+                                etc.
+                            </li>
                             <ul>
-                                <li><b>simple_pages</b><- contains controller for webpages  of our for project.</li>
+                                <li><b>simple_pages</b><- contains controller for webpages of our for project.</li>
                                 <ul>
-                                    <li><b>templates</b><- contains all the webpages in our project, like index,flask,docker pages.</li>
-                                    <li><b>_init_.py</b> : contains python function to render content from simple webpages combined with base html</li>
+                                    <li><b>templates</b><- contains all the webpages in our project, like
+                                        index,flask,docker pages.
+                                    </li>
+                                    <li><b>_init_.py</b> : contains python function to render content from simple
+                                        webpages combined with base html
+                                    </li>
                                 </ul>
-                                <li><b>static</b> <- This folder contains all the static content for project like CSS, JavaScript and images.</li>
-                                <li><b>templates</b><- contains template files like base.html that is common for most of the webpages.</li>
+                                <li><b>static</b> <- This folder contains all the static content for project like CSS,
+                                    JavaScript and images.
+                                </li>
+                                <li><b>templates</b><- contains template files like base.html that is common for most of
+                                    the webpages.
+                                </li>
                                 <li><b>run.py</b>: used to create server for the API.</li>
                                 <li><b>_init_.py</b> : contains initiation of Flask application.</li>
                             </ul>
@@ -68,15 +125,16 @@
             <div class="col-4" id="sidebar">
                 <h5> More Reading Material</h5>
                 <ul>
-                    <li> <a href="/docker">Docker</a>  </li>
-                    <li> <a href="/git">Git/GitHub</a> </li>
-                    <li> <a href="/cicd">CI/CD</a>  </li>
+                    <li><a href="/docker">Docker</a></li>
+                    <li><a href="/git">Git/GitHub</a></li>
+                    <li><a href="/cicd">CI/CD</a></li>
                     <li><a href="/aaa">AAA Testing</a></li>
                     <li><a href="/oop">OOP</a></li>
                     <li><a href="/pylint">Pylint</a></li>
                     <li><a href="/solid">SOLID</a></li>
                 </ul>
-                 <img src="https://miro.medium.com/max/800/1*Q5EUk28Xc3iCDoMSkrd1_w.png" style="height: 25% !important; width: 100%"/>
+                <img src="https://miro.medium.com/max/800/1*Q5EUk28Xc3iCDoMSkrd1_w.png"
+                     style="height: 25% !important; width: 100%"/>
             </div>
         </div>
     </div>
